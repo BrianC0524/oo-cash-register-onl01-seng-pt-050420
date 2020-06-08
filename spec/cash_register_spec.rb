@@ -43,7 +43,7 @@ describe 'CashRegister' do
       it 'applies the discount to the total price' do
         cash_register_with_discount.add_item("macbook air", 1000)
         cash_register_with_discount.apply_discount
-        expect(cash_register_with_discount.total).to eq(800)
+        expect(cash_register_with_discount.total).to eq(816)
       end
 
       it 'returns success message with updated total' do
